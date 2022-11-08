@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+</head>
+
+<body>
+<div class="container">
+  <div class="swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"> <img src="cooks.jpg" ></div>
+    <div class="swiper-slide"> <img src="daniel.jpg"</div>
+    <div class="swiper-slide"><img src="irina.jpg"></div>
+    <div class="swiper-slide"><img src="james.jpg"></div>
+    <div class="swiper-slide"><img src="janko.jpg"></div>
+    <div class="swiper-slide"><img src="jona.jpg"></div>
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+</div>
+  
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+  const swiper = new Swiper('.swiper', {
+    autoplay: {
+      delay:3000,
+      disableOnInteraction: false,
+    },
+  direction: 'vertical',
+  loop: true,
+      
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true;
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+  </script>
+</body>
+
+</html>
